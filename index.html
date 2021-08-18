@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./index.css">
+    <title>Prueba Dashboard</title>
+</head>
+
+<body class="flex">
+    <aside class="bg-gray-900 text-white">
+        <div class="flex items-center mb-5 w-full" id="logo">
+            <div class="w-20 h-20 flex items-center justify-center text-5xl">
+                <img src="./Icon.png" class="w-10" alt="">
+            </div>
+            <h1 class="text-md ml-2 font-bold w-48">Portal Clientes</h1>
+        </div>
+        <div id="menu" class="w-full">
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <div class="notification">
+                        <span class="flex h-3 w-3">
+                            <span
+                                class="animate-ping absolute h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                            <span class="rounded-full h-3 w-3 bg-purple-500"></span>
+                        </span>
+                    </div>
+                    <i class='bx bxs-dashboard'></i>
+                </div>
+                <span class="ml-2">Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <span class="ml-2">Solicitudes</span>
+            </a>
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <i class='bx bx-user-pin'></i>
+                </div>
+                <span class="ml-2">Candidatos</span>
+            </a>
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <i class='bx bx-library'></i>
+                </div>
+                <span class="ml-2">Dotación</span>
+            </a>
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <i class='bx bx-archive'></i>
+                </div>
+                <span class="ml-2">Proyectos</span>
+            </a>
+        </div>
+        <div id="other" class="w-full mt-auto">
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <i class='bx bx-support'></i>
+                </div>
+                <span class="ml-2">Soporte</span>
+            </a>
+            <a href="#" class="flex items-center text-gray-400 hover:text-white w-full">
+                <div class="w-20 h-14 flex items-center justify-center text-2xl">
+                    <i class='bx bx-cog'></i>
+                </div>
+                <span class="ml-2">Ajustes</span>
+            </a>
+            <div class="bg-gray-800  bg-opacity-75 w-full h-0.5"></div>
+            <a href="#" class="flex items-center w-full my-4 text-gray-400 hover:text-white">
+                <div class="w-20 h-16 flex items-center justify-center text-2xl">
+                    <img class="inline object-cover w-10 h-10 rounded-full"
+                        src="https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:022f6e4c-6c28-4e76-b04f-366024ac7574/1e3aecf5-9a30-4295-83ea-cf3fd35cda26/128?s=128"
+                        alt="Profile image" />
+                </div>
+                <div class="user-title">
+                    <span class="ml-2 block -mb-2">Alejandro Vásquez</span>
+                    <span class="ml-2 text-xs text-gray-500">Cocacola</span>
+                </div>
+            </a>
+        </div>
+    </aside>
+
+    <main class="inline-block w-full bg-gray-100">
+        <div class="container m-5">
+            <button class="bg-gray-200 border px-3 py-2" onClick="toggleAside()"><i
+                    class='bx bx-menu-alt-left'></i></button>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

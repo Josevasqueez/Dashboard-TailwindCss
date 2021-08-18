@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+aside {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+aside #menu *, aside #logo *, aside #other * {
+    transition: opacity .2s ease-in-out, z-index .2s ease-in-out, width .2s, color .1s;
+}
+
+aside.toggle {
+    margin-right: -8px;
+}
+
+aside.toggle #menu>a>span, aside.toggle #other>a>span, aside.toggle #other .user-title, aside.toggle #logo>h1 {
+    width: 0px;
+    opacity: 0;
+    z-index: -2;
+}
+aside.toggle #other .user-title{
+    transform: scale(0);
+}
+
+.notification {
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
+}
